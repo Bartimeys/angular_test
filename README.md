@@ -1,11 +1,6 @@
 ```
 git clone git@github.com:Bartimeys/angular_test.git
-
-```
-```npm install
-```
-
-```
+npm install
 npm start
 ```
 if you have error in linux/ubuntu
