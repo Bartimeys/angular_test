@@ -1,0 +1,135 @@
+/* app css stylesheet */
+
+body {
+
+
+    background: url(/imgs/bgLarge.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 20px;
+}
+.container{
+    margin-top: 200px;
+}
+
+.items {
+    list-style: none;
+}
+
+
+.thumbnail > img, .thumbnail a > img {
+    margin: auto;
+    padding: 0.5em;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.paragraph {
+    display: inline-block;
+    margin-right: 5px;
+    text-align: left;
+    color: #5d5d5d;
+    font-size: 11px;
+    line-height: 1.45;
+    white-space: normal;
+    list-style: none;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+span.rating{
+    margin: 35%;
+}
+@media (min-width: 766px){
+    .thumbnail{
+        max-width: 300px;
+        padding: 0.5em 0 0 0;
+        margin: 10px 25px;
+    }
+    span.rating {
+        margin: 30%;
+    }
+}
+@media (max-width: 586px){
+    .thumbnail{
+        margin: 20px auto;
+        max-width: 190px;
+    }
+    .container{
+        margin: auto 15px;
+    }
+    span.rating{
+        margin: 23%;
+    }
+}
+
+label span {
+    font-size: 1.5em;
+}
+
+
+label input[type="checkbox"] ~ i.fa.fa-check-square-o {
+    display: none;
+}
+
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
+    display: none;
+}
+
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
+    color: black;
+    display: inline;
+    margin-right: 10px;
+}
+
+label:hover input[type="checkbox"] ~ i.fa {
+    color: black;
+}
+
+div[data-toggle="buttons"] label {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2em;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: none;
+    border: 0px solid #c8c8c8;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+div.row > div:nth-child(2n+1){
+    float: right;
+}
